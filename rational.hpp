@@ -30,6 +30,10 @@ public:
 
     Rational(const int32_t &,
              const int32_t &);
+    
+    int32_t getNumerator() const;
+
+    int32_t getDenominator() const;
 
     bool operator==(const Rational &) const;
 
