@@ -6,6 +6,14 @@ private:
     void reduce();
 
 public:
+    class ZeroDivisionException : public std::exception {
+    private:
+        std::string message;
+    public:
+        ZeroDivisionException(const std::string &message);
+        const char *what() const noexcept;
+    };
+
     Rational();
 
     Rational(const int32_t &);
