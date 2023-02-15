@@ -2,12 +2,11 @@
 #include<iostream>
 
 class Rational {
-public:
     int32_t numerator_{1};
     int32_t denominator_{1};
 
     void reduce();
-
+public:
     Rational() = default;
 
     Rational(const int32_t&);
