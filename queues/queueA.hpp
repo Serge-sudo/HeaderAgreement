@@ -13,7 +13,7 @@ class QueueA {
 
     void push(const T& item) noexcept;
 
-    T pop() noexcept(false);
+    void pop() noexcept(false);
 
     const T& peek() const noexcept(false);
  private:
