@@ -16,9 +16,9 @@ class QueueL {
 
     bool isEmpty() const noexcept;
 
-    void enqueue(const T& data) noexcept;
+    void push(const T& data) noexcept;
 
-    void dequeue() noexcept(false);
+    void pop() noexcept(false);
 
     const T& peek() const noexcept(false);
 };

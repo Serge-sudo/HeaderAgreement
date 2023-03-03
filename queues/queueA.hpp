@@ -11,9 +11,9 @@ class QueueA {
 
     int32_t size() const noexcept;
 
-    void enqueue(const T& item) noexcept;
+    void push(const T& item) noexcept;
 
-    T dequeue() noexcept(false);
+    T pop() noexcept(false);
 
     const T& peek() const noexcept(false);
  private:
