@@ -9,12 +9,15 @@ class QueueL {
     };
     Node *front{nullptr};
     Node *rear{nullptr};
+    int32_t size_{0};
  public:
     QueueL() noexcept = default;
 
     ~QueueL() noexcept;
 
     bool isEmpty() const noexcept;
+
+    int32_t size() const noexcept;
 
     void push(const T& data) noexcept;
 
