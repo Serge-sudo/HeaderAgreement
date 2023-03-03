@@ -7,7 +7,7 @@ class QueueA {
 
     ~QueueA() noexcept;
 
-    bool isEmpty() const noexcept;
+    bool empty() const noexcept;
 
     int32_t size() const noexcept;
 
@@ -15,12 +15,12 @@ class QueueA {
 
     void pop() noexcept(false);
 
-    const T& peek() const noexcept(false);
+    const T& front() const noexcept(false);
  private:
     void expand() noexcept;
 
     T *data;
-    int32_t front;
-    int32_t rear;
+    int32_t head;
+    int32_t tail;
     int32_t capacity;
 };

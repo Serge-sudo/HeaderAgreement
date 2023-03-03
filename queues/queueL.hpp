@@ -7,15 +7,15 @@ class QueueL {
         Node *next_{nullptr};
         Node(const T& d) : data_(d) {}
     };
-    Node *front{nullptr};
-    Node *rear{nullptr};
+    Node *head{nullptr};
+    Node *tail{nullptr};
     int32_t size_{0};
  public:
     QueueL() noexcept = default;
 
     ~QueueL() noexcept;
 
-    bool isEmpty() const noexcept;
+    bool empty() const noexcept;
 
     int32_t size() const noexcept;
 
@@ -23,5 +23,5 @@ class QueueL {
 
     void pop() noexcept(false);
 
-    const T& peek() const noexcept(false);
+    const T& front() const noexcept(false);
 };
