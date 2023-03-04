@@ -9,8 +9,6 @@ class QueueA {
 
     bool empty() const noexcept;
 
-    int32_t size() const noexcept;
-
     void push(const T& item) noexcept;
 
     void pop() noexcept(false);
