@@ -1,4 +1,5 @@
-#include <stdexcept>
+#ifndef QUEUE_L_HEADER_FILE_H
+#define QUEUE_L_HEADER_FILE_H
 
 template<typename T>
 class QueueL {
@@ -18,7 +19,9 @@ class QueueL {
 
     void push(const T& data) noexcept;
 
-    void pop() noexcept(false);
+    void pop() noexcept;
 
-    const T& front() const noexcept(false);
+    const T& front() const;
 };
+
+#endif // QUEUE_L_HEADER_FILE_H

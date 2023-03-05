@@ -1,4 +1,5 @@
-#include <stdexcept>
+#ifndef QUEUE_A_HEADER_FILE_H
+#define QUEUE_A_HEADER_FILE_H
 
 template<class T>
 class QueueA {
@@ -11,9 +12,9 @@ class QueueA {
 
     void push(const T& item) noexcept;
 
-    void pop() noexcept(false);
+    void pop() noexcept;
 
-    const T& front() const noexcept(false);
+    const T& front() const;
  private:
     void expand() noexcept;
 
@@ -22,3 +23,5 @@ class QueueA {
     int32_t tail;
     int32_t capacity;
 };
+
+#endif // QUEUE_A_HEADER_FILE_H
