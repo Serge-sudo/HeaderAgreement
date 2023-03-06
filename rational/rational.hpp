@@ -2,7 +2,7 @@
 #include<iostream>
 
 class Rational {
-    int32_t numerator_{1};
+    int32_t numerator_{0};
     int32_t denominator_{1};
 
     void reduce();
